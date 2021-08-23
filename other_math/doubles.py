@@ -4,7 +4,7 @@ Which number doubles when its last digit becodes its first digit???
 '''
 
 # We dont need to look at 1 digit numbers
-numbers = [*range(10, 1000000)]
+numbers = [*range(100000000000000000, 1000000000000000000)]
 
-num = [num for num in numbers if int(str(num)[1:] + str(num)[:1])/2 == num]
+num = [x for x in numbers if int(str(x)[1:] + str(x)[:1])/2 == x]
 print(num)
